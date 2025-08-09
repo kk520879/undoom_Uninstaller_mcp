@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "undoom-uninstaller-mcp": {
+      "command": "uvx",
+      "args": [
+        "--index-url",
+        "https://pypi.tuna.tsinghua.edu.cn/simple",
+        "undoom-uninstaller-mcp"
+      ]
+    }
+  }
+}

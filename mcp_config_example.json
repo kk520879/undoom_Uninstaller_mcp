@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "undoom-uninstaller-mcp": {
+      "command": "D:/undoom_Uninstaller_mcp/.venv/Scripts/python.exe",
+      "args": [
+        "D:/undoom_Uninstaller_mcp/main.py"
+      ]
+    }
+  }
+}
+
+// ❌ 错误配置示例（用户遇到的问题）：
+/*
+{
+  "mcpServers": {
+    "mcp-plus": {
+      "command": "D:\\undoom_Uninstaller_mcp\\.venv\\Scripts\\python.exe",
+      "args": [
+        "D:\\undoom_Uninstaller_mcp\\main.py"
+      ]
+    }
+  }
+}
+*/
+
+// ✅ 正确配置（修正版本）：
+// 问题1：服务器名称应该是 "undoom-uninstaller-mcp" 而不是 "mcp-plus"
+// 问题2：路径必须使用正斜杠 / 而不是反斜杠 \
+// 问题3：JSON中不能有注释，实际使用时请删除所有 // 开头的行
+
+// 替代配置（使用相对路径）：
+/*
+{
+  "mcpServers": {
+    "undoom-uninstaller-mcp": {
+      "command": ".venv/Scripts/python.exe",
+      "args": [
+        "main.py"
+      ],
+      "cwd": "D:/undoom_Uninstaller_mcp"
+    }
+  }
+}
+*/

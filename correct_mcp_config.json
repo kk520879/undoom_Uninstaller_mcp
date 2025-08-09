@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "undoom-uninstaller-mcp": {
+      "command": "D:/undoom_Uninstaller_mcp/.venv/Scripts/python.exe",
+      "args": [
+        "D:/undoom_Uninstaller_mcp/main.py"
+      ]
+    }
+  }
+}
